@@ -1,0 +1,272 @@
+
+Body{
+Margin: 0;
+background-color: #FCF0FC;
+}
+
+.container{
+Width: 100vw;
+Height: 100vh;
+
+Font-family: "quicksand", '"sans-serif";
+Font-weight: bold;
+Font-size: 20px;
+
+Display: grid;
+
+Grid-template-columns: 1fr 1fr 1fr;
+Grid-template-rows: 100px 30px 180px 1fr 150px;
+
+Gap: 0.5px;
+
+
+Box-sizing: border-box;
+}
+
+.container div{
+Padding: 10px;
+Border: 1px solid #9932CC;}
+
+.header{
+Grid-column-start: 1;
+Grid-column-end: 4;
+Display: inline-block;
+
+}
+
+.header img{
+Float: left:
+width: 70%;
+Height: 100%;
+}
+
+.header h1{
+Font-family: "sans-serif";
+color: #8C069E;
+font-size: 60px;
+Margin-top: 10px;
+Display: inline-block;
+Padding-left: 20px;
+}
+
+.header p{
+Display: inline-block;
+Padding-left: 60px;
+Font-family: "arial" "Verdana";
+Font-size: 20px;
+Color:black;
+}
+
+.navigation{
+Grid-column-start: 1;
+Grid-column-end: 4;
+Grid-row-start: 2;
+Grid-row-end: span 1;
+background-Color: #8C069E;
+}
+
+.navigation ul {
+Overflow: hidden;
+Width: 100%;
+Border: none;
+Float: left;
+Text-align: left;
+padding: 0;
+Margin: 0;
+Text-decoration: none;
+List-style-type: none;
+}
+
+.navigation li{
+Float: left;
+}
+
+.navigation li a{
+Font-family: "arial", "Verdana";
+color: #FFFFFF;
+padding-right: 20px;
+Font-size: 15px;
+Text-decoration: none;
+Display: block;
+}
+
+
+.navigation a:active{
+Background-Color: #F9CCFF;
+Text-decoration: underline;
+
+}
+
+.navigation li:hover{
+Background-Color: #F9CCFF;
+Text-decoration: underline;
+}
+
+
+.placeholder{
+Grid-column-start: 1;
+Grid-column-end: 4;
+Grid row start: 3;
+Grid-row-end: span 1;
+Text-align: center;
+Font-size: 30px;
+Color: #8C069E;
+}
+
+.content1{
+Grid-column-start:1;
+Grid-column-end: 4;
+Grid-row-start: 4;
+Grid-row-end: span 1;
+}
+
+.slider{
+Grid-column-start:1;
+Grid-column-end: 4;
+Grid-row-start: 4;
+Grid-row-end: span 1;
+}
+
+#slider, ul
+{
+	height: 200px;
+}
+
+#slider
+{
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	margin-top: 50px;
+	position: relative;
+	width: 600px;
+        Border: none;
+}
+
+#slider li
+{
+	float: left;
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	height: 200px;
+        
+}
+
+#slider ul
+{
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9000px;
+	transition: left .2s linear;
+	-moz-transition: left .2s linear;
+	-o-transition: left .2s linear;
+	-webkit-transition: left .2s linear;
+	margin-left: -25px;
+  font-family: "arial" , "Verdana";
+  Font-size: 23px;
+  color: #666;
+  Border: none;
+  Font-weight: normal;
+}
+
+/*** Content ***/
+
+.slider-container
+{
+  color:#000;
+	margin: 0 auto;
+	padding: 0;
+	width: 550px;
+  min-height: 180px;
+  text-align:center;
+  Border: none;
+}
+
+.slider-container h2
+{
+ 	color: #fff;
+}
+
+.slider-container  p
+{
+	margin: 10px 25px;
+	font-weight: semi-bold;
+        Font-sie: 30px;
+	line-height: 150%;
+        Border: none;
+}
+
+/*** target hooks ****/
+
+@-webkit-keyframes slide-animation {
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:0px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+
+#slider ul
+{
+	-webkit-animation: slide-animation 20s infinite;
+}
+
+#slider ul:hover
+{
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+
+.footer{
+Grid-column-start: 1;
+Grid-column-end: 4;
+Font-family: "arial", "Verdana";
+Display: inline-block;
+Text-align: center;
+
+}
+
+.footer h6{
+Font-size: 23px;
+Font-weight: bold;
+Margin-bottom: 0px;
+Color: #8C069E;
+Margin-top: 0px;
+}
+
+.footer p{
+Font-size: 17px;
+Font-weight: normal; 
+margin-top:0px;
+}
+
+.button4{
+Font-size: 22px;
+Text-decoration: none;
+Font-family: "arial", "Verdana";
+Background-Color: #E7E7E6;
+color: #9932CC;
+Border: 1px solid black;
+display: inline-block;
+Margin-top: 5px;
+Width: 200px;
+Margin-bottom: 5px;
+}
+
+.button4:hover{
+Background-color: #9932CC;
+Color: #E7E7E6;
+}
